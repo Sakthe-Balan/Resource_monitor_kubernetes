@@ -25,7 +25,7 @@
 - [x]  Docker and Kubectl installed.
 - [x]  Code editor (Vscode)
 
-# ✨Let’s Start the Project ✨
+# Let’s Start the Project 
 
 ## **Part 1: Deploying the Flask application locally**
 
@@ -217,3 +217,5 @@ kubectl get pods -n default (to check the pods)
 Once your pod is up and running, run the port-forward to expose the service
 
 kubectl port-forward service/<service_name> 5000:5000
+or 
+use the external ip and port to connect
