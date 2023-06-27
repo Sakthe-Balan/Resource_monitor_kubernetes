@@ -29,7 +29,7 @@
 
 ## **Part 1: Deploying the Flask application locally**
 
-### **Step 1: Clone the code**
+## **Step 1: Clone the code**
 
 Clone the code from the repository:
 
@@ -37,7 +37,7 @@ Clone the code from the repository:
 $ git clone <repository_url>
 ```
 
-### **Step 2: Install dependencies**
+## **Step 2: Install dependencies**
 
 The application uses the **`psutil`** and **`Flask`, Plotly, boto3** libraries. Install them using pip:
 
@@ -45,7 +45,7 @@ The application uses the **`psutil`** and **`Flask`, Plotly, boto3** libraries. 
 pip3 install -r requirements.txt
 ```
 
-### **Step 3: Run the application**
+## **Step 3: Run the application**
 
 To run the application, navigate to the root directory of the project and execute the following command:
 
@@ -57,7 +57,7 @@ This will start the Flask server on **`localhost:5000`**. Navigate to [http://lo
 
 ## **Part 2: Dockerizing the Flask application**
 
-### **Step 1: Create a Dockerfile**
+## **Step 1: Create a Dockerfile**
 
 Create a **`Dockerfile`** in the root directory of the project with the following contents:
 
@@ -86,7 +86,7 @@ EXPOSE 5000
 CMD ["flask", "run"]
 ```
 
-### **Step 2: Build the Docker image**
+## **Step 2: Build the Docker image**
 
 To build the Docker image, execute the following command:
 
@@ -94,7 +94,7 @@ To build the Docker image, execute the following command:
 $ docker build -t <image_name> .
 ```
 
-### **Step 3: Run the Docker container**
+## **Step 3: Run the Docker container**
 
 To run the Docker container, execute the following command:
 
@@ -106,7 +106,7 @@ This will start the Flask server in a Docker container on **`localhost:5000`**. 
 
 ## **Part 3: Pushing the Docker image to ECR**
 
-### **Step 1: Create an ECR repository**
+## **Step 1: Create an ECR repository**
 
 Create an ECR repository using Python:
 
@@ -125,7 +125,7 @@ repository_uri = response['repository']['repositoryUri']
 print(repository_uri)
 ```
 
-### **Step 2: Push the Docker image to ECR**
+## **Step 2: Push the Docker image to ECR**
 
 Push the Docker image to ECR using the push commands on the console:
 
@@ -135,15 +135,15 @@ Push the Docker image to ECR using the push commands on the console:
 
 ## **Part 4: Creating an EKS cluster and deploying the app using Python**
 
-### **Step 1: Create an EKS cluster**
+## **Step 1: Create an EKS cluster**
 
 Create an EKS cluster and add node group
 
-### **Step 2: Create a node group**
+## **Step 2: Create a node group**
 
 Create a node group in the EKS cluster.
 
-### **Step 3: Create deployment and service**
+## **Step 3: Create deployment and service**
 
 ```jsx
 from kubernetes import client, config
