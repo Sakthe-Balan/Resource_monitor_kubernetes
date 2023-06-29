@@ -17,7 +17,7 @@
 
 
 
-(Things to have before starting the projects)
+Things to have before starting the projects
 
 - [x]  AWS Account.
 - [x]  Programmatic access and AWS configured with CLI.
