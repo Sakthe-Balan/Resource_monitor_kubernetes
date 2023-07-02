@@ -213,6 +213,8 @@ kubectl get deployment -n default (check deployments)
 kubectl get service -n default (check service)
 kubectl get pods -n default (to check the pods)
 ```
+```
+```
 
 Once your pod is up and running, run the port-forward to expose the service
 
